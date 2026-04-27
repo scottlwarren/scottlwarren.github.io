@@ -1,0 +1,16 @@
+title: Scott Warren
+email: scottlwarren@protonmail.com
+description: >-
+  A short blog showcasing the random tech things in my world
+baseurl: "/" # Use "/" if your site is at username.github.io"
+url: "https://scottlwarren.github.io"
+
+# Build settings
+theme: minima # Or leave blank if using a custom theme in _layouts
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom Variables
+author: Scott Warren
+github_username: scottlwarren
