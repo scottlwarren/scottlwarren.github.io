@@ -1,9 +1,23 @@
+- company: "DataAnnotation.tech"
+  role: "AI Data Annotation - Coding Specialist"
+  date: "Ad-hoc"
+  description: |
+    Working on _ad-hoc_ projects involving AI prompt-engineering and reinforment learning over a number of areas, with a specialism in coding. Other work within the AI sphere includes creation of ruberics, peer-review, and extensive fact-checking to highlight hallucinations and other AI artifacts.
+
 - company: "G4S Patient Transport Services"
   role: "Business Intelligence Manager"
-  date: "2023–Present"
-  description: "Managing data pipelines and patient transport analytics."
-  
+  date: "June 2023 – Present"
+  description: |
+    Stragtegic and hands-on leadership of a team of analysts within the healthcare logistics sector. Developed the business' first dedicated data infrastrucure using `BigQuery` and ingestion of data from `SQL`, `JSON`, `REST` and other sources. Introduced machine learning approaches using `R` as a PoC for a wider project involving modern AI platforms. Designed custom ingestion methods within `python` for `REST` and `SOAP` APIs. 
+
 - company: "Lloyd Warwick International"
   role: "Data Analyst"
-  date: "2021-2023"
-  description: "Loss adjusting"
+  date: "July 2022 - June 2023"
+  description: |
+    Data driven loss adjusting, focusing on multimillion dollar claims within the reinsurance and energy markets. Gathered a wide range of data sources using `REST` APIs, automated `ocr` ingestion of PDF files and other data sources such as Twitter/X for sentiment analysis. Established a "reproduciblity first" workflow using `RMarkdown`, creating an auditable and transparent loss adjusting process.
+
+- company: "SEIB Insurance Brokers"
+  role: "Senior Data Analyst"
+  date: "July 2021 - June 2022"
+  description: |
+    Utilised `R` and `SQL` to perform granular underwriting analysis, turning five historically unprofitable insurance schemes into net-profitable products within 6 months. Managed reporting and analysis of a suite of 20 + delegated authority schemes, presenting results to internal and external stakeholders. Generation of self-service `Excel` sheets providing "What-if" analytics to underwriters, showing the main leavers to pull in order to change the course of a product.

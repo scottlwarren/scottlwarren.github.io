@@ -1,0 +1,17 @@
+
+- title: "Streams of data from drops of water: 21st century molecular microbial ecology"
+  authors: |
+    Dave R. Clark, Robert M. W. Ferguson, Danielle N. Harris, Kirsty J. Matthews Nicholass, Hannah J. Prentice, Kate C. Randall, Luli Randell, **Scott L. Warren**, and Alex J. Dumbrell
+  journal: "WIRES Water"
+  date: "2018"
+  url: "https://doi.org/10.1002/wat2.1280"
+  notes: |
+    Explored the transition of ecology into a `data-intensive science`. Focused on the bioinformatic pipelines and _computational frameworks_ required to process large-scale environmental DNA (eDNA) datasets.
+
+- title: "Gene-to-ecosystem impacts of a catastrophic pesticide spill: testing a multilevel bioassessment approach in a river ecosystem"
+  authors: "Murray S. A. Thompson, Claire Bankier, Thomas Bell, Alex J. Dumbrell, Clare Gray, Mark E. Ledger, Katja Lehmann, Boyd A. McKew, Carl D. Sayer, Felicity Shelley, Mark Trimmer, **Scott L. Warren**, and Guy Woodward"
+  journal: "Freshwater Biology"
+  date: "2016"
+  url: "https://doi.org/10.1111/fwb.12676"
+  notes: |
+    A multi-year study evaluating the cascading effects of a pesticide spill. This work involved `high-dimensional data integration` across multiple biological scales, from microbial genes to macroscopic food webs.

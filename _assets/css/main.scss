@@ -9,3 +9,57 @@
   padding: 40px 20px !important;
   position: relative !important;
 }
+
+code {
+  padding: 2px 5px;
+  background-color: #f3f6fa;
+  color: #c7254e; /* Or a professional blue like #2a7ae2 */
+  border-radius: 4px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.pub-item {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+.pub-title {
+  margin-bottom: 0.3rem !important;
+  color: #111;
+  font-weight: bold;
+}
+
+.pub-authors {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.pub-journal {
+  color: #2a7ae2;
+}
+
+.pub-notes {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #666;
+  
+  p { margin-bottom: 0; }
+}
+
+.pub-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #2a7ae2;
+  text-decoration: none;
+  border: 1px solid #2a7ae2;
+  padding: 4px 10px;
+  border-radius: 4px;
+  
+  &:hover {
+    background-color: #2a7ae2;
+    color: white !important;
+  }
+}
