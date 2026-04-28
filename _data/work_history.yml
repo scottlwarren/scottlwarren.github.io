@@ -1,14 +1,16 @@
-- company: "DataAnnotation.tech"
-  role: "AI Data Annotation - Coding Specialist"
-  date: "Ad-hoc"
-  description: |
-    Working on _ad-hoc_ projects involving AI prompt-engineering and reinforment learning over a number of areas, with a specialism in coding. Other work within the AI sphere includes creation of ruberics, peer-review, and extensive fact-checking to highlight hallucinations and other AI artifacts.
 
 - company: "G4S Patient Transport Services"
   role: "Business Intelligence Manager"
   date: "June 2023 – Present"
   description: |
-    Stragtegic and hands-on leadership of a team of analysts within the healthcare logistics sector. Developed the business' first dedicated data infrastrucure using `BigQuery` and ingestion of data from `SQL`, `JSON`, `REST` and other sources. Introduced machine learning approaches using `R` as a PoC for a wider project involving modern AI platforms. Designed custom ingestion methods within `python` for `REST` and `SOAP` APIs. 
+    Strategic and hands-on leadership of a team of analysts within the healthcare logistics sector. Developed the business' first dedicated data infrastructure using `BigQuery` and ingestion of data from `SQL`, `JSON`, `REST` and other sources. Introduced machine learning approaches using `R` as a PoC for a wider project involving modern AI platforms. Designed custom ingestion methods within `python` for `REST` and `SOAP` APIs. 
+
+- company: "DataAnnotation.tech"
+  role: "AI Data Annotation - Coding Specialist"
+  date: "Ad-hoc"
+  description: |
+    Working on _ad-hoc_ projects involving `AI prompt-engineering` and `reinforcement learning` over a number of areas, with a specialism in coding. Other work within the AI sphere includes creation of rubrics, peer-review, and extensive fact-checking to highlight hallucinations and other AI artifacts.
+
 
 - company: "Lloyd Warwick International"
   role: "Data Analyst"
