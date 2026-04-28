@@ -1,8 +1,8 @@
 title: Scott Warren
 email: scottlwarren@protonmail.com
 description: >-
-  A short blog showcasing the random tech things in my world
-baseurl: "/" # Use "/" if your site is at username.github.io"
+  Words about tech, data, and AI
+baseurl: "" # Use "/" if your site is at username.github.io"
 url: "https://scottlwarren.github.io"
 
 # Build settings
@@ -14,3 +14,6 @@ plugins:
 # Custom Variables
 author: Scott Warren
 github_username: scottlwarren
+
+include:
+  - assets

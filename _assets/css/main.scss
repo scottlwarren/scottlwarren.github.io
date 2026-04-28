@@ -63,3 +63,12 @@ code {
     color: white !important;
   }
 }
+
+.post-content img {
+  display: block;
+  max-width: 100%;    /* Prevents the image from overflowing the page */
+  height: auto;
+  margin: 2rem auto;  /* Centers the image with space above/below */
+  border-radius: 8px; /* Gives it a modern look */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
