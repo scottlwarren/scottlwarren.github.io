@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Blogs about Homelabs, data, and tech
+title: Words about tech, data, and AI
 ---
 
-A little blog to help document my work
+
 
 ## Recent Posts
 <ul>
