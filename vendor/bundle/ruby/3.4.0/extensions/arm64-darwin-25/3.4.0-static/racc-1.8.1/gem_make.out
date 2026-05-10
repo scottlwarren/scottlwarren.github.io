@@ -1,0 +1,30 @@
+current directory: /Users/scott/Documents/Code/scottlwarren.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/scott/.rubies/ruby-3.4.1/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/scott/Documents/Code/scottlwarren.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260510-25669-5yxmr0 sitelibdir\=./.gem.20260510-25669-5yxmr0 clean
+
+current directory: /Users/scott/Documents/Code/scottlwarren.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260510-25669-5yxmr0 sitelibdir\=./.gem.20260510-25669-5yxmr0
+compiling cparse.c
+In file included from cparse.c:12:
+In file included from /Users/scott/.rubies/ruby-3.4.1/include/ruby-3.4.0/ruby.h:38:
+In file included from /Users/scott/.rubies/ruby-3.4.1/include/ruby-3.4.0/ruby/ruby.h:28:
+In file included from /Users/scott/.rubies/ruby-3.4.1/include/ruby-3.4.0/ruby/internal/arithmetic.h:24:
+In file included from /Users/scott/.rubies/ruby-3.4.1/include/ruby-3.4.0/ruby/internal/arithmetic/char.h:29:
+/Users/scott/.rubies/ruby-3.4.1/include/ruby-3.4.0/ruby/internal/core/rstring.h:398:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  398 |         struct RString retval;
+      |                        ^
+/Users/scott/.rubies/ruby-3.4.1/include/ruby-3.4.0/ruby/internal/core/rbasic.h:86:17: note: member 'klass' declared 'const' here
+   86 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/scott/Documents/Code/scottlwarren.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260510-25669-5yxmr0 sitelibdir\=./.gem.20260510-25669-5yxmr0 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20260510-25669-5yxmr0/racc
+
+current directory: /Users/scott/Documents/Code/scottlwarren.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260510-25669-5yxmr0 sitelibdir\=./.gem.20260510-25669-5yxmr0 clean
