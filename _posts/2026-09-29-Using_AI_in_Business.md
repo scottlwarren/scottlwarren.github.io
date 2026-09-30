@@ -38,7 +38,7 @@ When researching how this is impacting things such as scientific research, I did
 
 # How do we solve the black box issue?
 
-My view is to use AI as a prescript tool rather than just a one stop shop with no review. Considering a workflow where AI is assisting someone to statistically analyse a dataset - some would upload their data into a tool like Gemini Notebook, and ask it to create an output. This output - the sole deliverable - is something which gives a quick result, and we can then move onto the next task.
+My view is to use AI as a prescriptive tool rather than just a one stop shop with no review. Considering a workflow where AI is assisting someone to statistically analyse a dataset - some would upload their data into a tool like Gemini Notebook, and ask it to create an output. This output - the sole deliverable - is something which gives a quick result, and we can then move onto the next task.
 
 However, for longivity, and also reproducibility, it would be sensible to ask for the codebase itself. Most AI tools are able to do this, and with an analyst reviewing, change controlling and owning the background work, there is scope for future development on existing good grounds. 
 
