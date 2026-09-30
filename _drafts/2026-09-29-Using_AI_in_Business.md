@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using AI in Business - Risks and Mitigations"
+title: "Considerations for using AI in business processes"
 date: 2026-10-30
 categories: update
 ---
@@ -32,7 +32,7 @@ AI models are progressing (and releasing) at a rate which can be incredibly diff
 
 These releases can be broken down by vendor, and I think the biggest take away from this is that *any AI integration is built on shifting sands*. Models are changing rapidly, and also with very little warning unless you're paying attention. Importantly, we know very little about what is changing - putting change control as an unknown risk which cannot be managed.
 
-![AI agent suggesting to summarise a paper about AI..]({{ 'images/SD_AI.TIFF' | relative_url }})
+![AI agent suggesting to summarise a paper about AI..]({{ 'images/SD_AI.jpg' | relative_url }})
 
 When researching how this is impacting things such as scientific research, I did see the irony above in having an AI chatbot reviewing a paper about AI consistency. Would be very interesting to see how it's summary changes over time...
 

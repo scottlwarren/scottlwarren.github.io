@@ -78,13 +78,27 @@
 
 <h3 id="capturing-docker-compose-changes-in-gitea">Capturing Docker Compose changes in Gitea</h3>
 
-<p>In order to both source-control and backup my services on Docker Compose, I used Git. First step was finding the sources on the main mini PC, and then setting the remote repository.</p>
+<p>In order to both source-control and backup my services on Docker Compose, I used Git. First step was finding the sources on the main mini PC, and then setting the remote repository. This workflow assumes that you are comfortable with <a href="https://git-scm.com/">git</a></p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /var/lib/casaos/apps/
+<span class="c"># set directory to location where Docker Compose .yml files are stored</span>
 <span class="nb">sudo </span>git init
-<span class="nb">sudo </span>git remote add origin http://192.xxx.xx.xxx:xxxx/scott/casaos-backups.git <span class="c"># Change your IP and port to your Gitea Instance</span>
+<span class="nb">sudo </span>git remote add origin http://192.xxx.xx.xxx:xxxx/scott/casaos-backups.git 
+<span class="c"># Change your IP and port to your Gitea Instance</span>
 </code></pre></div></div>
+<p>With the repo initiated, and remote set it’s easy now to <code class="language-plaintext highlighter-rouge">git push</code> the Docker Compose files into Gitea, and therefore save them. However, this is still a manual process.</p>
 
+<p>To automate, I created a bash script that could be scheduled:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nb">cd</span> /var/lib/casaos/apps/
+<span class="nb">sudo </span>git add <span class="nb">.</span>
+<span class="nb">sudo </span>git commit <span class="nt">-m</span> <span class="s2">"Automated backup: </span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2">"</span>
+<span class="nb">sudo </span>git push origin master
+</code></pre></div></div>
+<p>This script, saved as <code class="language-plaintext highlighter-rouge">dc_backup.sh</code>, essentially runs the code needed to stage (add .), commit (with a timestamp) and push the commits to the Gitea server. We are still missing the automation part, as a manual call would be required for this to run. Linux machines have a scheduling system known as Cron. Cron is a bit difficult to find if you don’t know where to look, but can be accessed using the <code class="language-plaintext highlighter-rouge">crontab -e</code> command in your terminal.</p>
+
+<p>Cron also uses a bit of a weird setup for defining actions.</p>
 
   </div><a class="u-url" href="/update/2026/05/10/Backup_routine.html" hidden></a>
 </article>

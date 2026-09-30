@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-11T15:05:05+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Scott Warren</title><subtitle>Words about tech, data, and AI</subtitle><author><name>Scott Warren</name></author><entry><title type="html">Backup automation - A homelab approach</title><link href="http://localhost:4000/update/2026/05/10/Backup_routine.html" rel="alternate" type="text/html" title="Backup automation - A homelab approach" /><published>2026-05-10T00:00:00+01:00</published><updated>2026-05-10T00:00:00+01:00</updated><id>http://localhost:4000/update/2026/05/10/Backup_routine</id><content type="html" xml:base="http://localhost:4000/update/2026/05/10/Backup_routine.html"><![CDATA[<h1 id="you-dont-need-a-backup---until-you-need-one">You don’t need a backup - until you need one</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-09-30T11:41:52+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Scott Warren</title><subtitle>Words about tech, data, and AI</subtitle><author><name>Scott Warren</name></author><entry><title type="html">Considerations for using AI in business processes</title><link href="http://localhost:4000/update/2026/10/30/Using_AI_in_Business.html" rel="alternate" type="text/html" title="Considerations for using AI in business processes" /><published>2026-10-30T00:00:00+00:00</published><updated>2026-10-30T00:00:00+00:00</updated><id>http://localhost:4000/update/2026/10/30/Using_AI_in_Business</id><content type="html" xml:base="http://localhost:4000/update/2026/10/30/Using_AI_in_Business.html"><![CDATA[<h1 id="ai-is-everywhere">AI is everywhere</h1>
+
+<p>It’s 2026 - AI is everywhere whether we like it or not. Let me start first with a clear message - AI is a useful tool that I am not opposed to. It can create solid deliverables which can make everyone’s life easier; however it does come at the cost of massive resource utilisation and increased prices for everyday electronics.</p>
+
+<p>It seems that the way for a business to become modern is to have an AI USP - be it a chat bot, some tool for creating codebase or AI powered decision making. In my world of analytics, every tool has an AI integration - and with tools such as Claude Cowork and ChatGPT Codex these tools are becoming available for everyone.</p>
+
+<p>Cowork and Codex are very interesting tools. I’ve used them to create entire datasets from ‘scratch’ - and in doing so it can also create any other artifacts for a given task. Want a dataset which emulates a complex insurance claim? Cowork managed to produce 6 spreadsheets containing bordereaux from multiple, fictional insurance agents, along with email chains and internal correspondence seemingly captured from a chat tool like Slack, all within 30 minutes.</p>
+
+<p>Amazing - working on complex insurance claims was one of my favourite roles, and the info produced was scarily accurate. Someone must have put some very commercially sensitive information into a LLM at some point, and it has recreated it with scary accuracy. The privacy of using these tools is not the focus of this blog, but does give lots to ponder on.</p>
+
+<h1 id="processes-and-reproducibility">Processes and reproducibility</h1>
+
+<p>Business processes are key to success. Our policies, standard operating procedures and method statements give a standardised, uniform way of working that ensures that even highly diverse teams are doing the right thing at the right time.</p>
+
+<p>My work in science has taught me the importance of reproducibility - a complete stranger being able to pick up your methodology, carry out your experiment and get similar results. Being exposed to data systems and also operational procedures, documentation and accepted methods has shown this is a truly useful transferable skill to have gained.</p>
+
+<p>In the process of learning new methods, and implementing new data architecture, I have strived through peer review to document what is being done, how to do it again, and where to look when something goes wrong.</p>
+
+<h1 id="the-ai-blackbox">The AI Blackbox</h1>
+
+<p>AI models are progressing (and releasing) at a rate which can be incredibly difficult to keep up with. I’ve included the chart below from https://aireleastracker.com/ - a site which monitors all of the major players in the space. As of September 2026, 255 models have been released.</p>
+
+<iframe src="https://aireleasetracker.com/embed/releases-by-lab?theme=light" title="Releases by Lab Over Time — AI Release Tracker" width="100%" height="460" style="border:0;border-radius:12px;max-width:640px" loading="lazy"></iframe>
+<p style="font:13px/1.5 system-ui,sans-serif;margin:8px 0 0"><a href="https://aireleasetracker.com/analytics?utm_source=embed&amp;utm_medium=referral&amp;utm_campaign=releases-by-lab" target="_blank" rel="noopener" style="color:#6b7280;text-decoration:underline">Releases by Lab Over Time — via AI Release Tracker</a></p>
+
+<p>These releases can be broken down by vendor, and I think the biggest take away from this is that <em>any AI integration is built on shifting sands</em>. Models are changing rapidly, and also with very little warning unless you’re paying attention. Importantly, we know very little about what is changing - putting change control as an unknown risk which cannot be managed.</p>
+
+<p><img src="/images/SD_AI.jpg" alt="AI agent suggesting to summarise a paper about AI.." /></p>
+
+<p>When researching how this is impacting things such as scientific research, I did see the irony above in having an AI chatbot reviewing a paper about AI consistency. Would be very interesting to see how it’s summary changes over time…</p>
+
+<h1 id="how-do-we-solve-the-black-box-issue">How do we solve the black box issue?</h1>
+
+<p>My view is to use AI as a prescript tool rather than just a one stop shop with no review. Considering a workflow where AI is assisting someone to statistically analyse a dataset - some would upload their data into a tool like Gemini Notebook, and ask it to create an output. This output - the sole deliverable - is something which gives a quick result, and we can then move onto the next task.</p>
+
+<p>However, for longivity, and also reproducibility, it would be sensible to ask for the codebase itself. Most AI tools are able to do this, and with an analyst reviewing, change controlling and owning the background work, there is scope for future development on existing good grounds.</p>
+
+<p>Sensible AI use will save headaches in the future, letting new staff pick up work and support businesses moving forward without completely changing the playing field.</p>]]></content><author><name>Scott Warren</name></author><category term="update" /><summary type="html"><![CDATA[AI is everywhere]]></summary></entry><entry><title type="html">Considerations for using AI in business processes</title><link href="http://localhost:4000/update/2026/10/30/Using_AI_in_Business.html" rel="alternate" type="text/html" title="Considerations for using AI in business processes" /><published>2026-10-30T00:00:00+00:00</published><updated>2026-10-30T00:00:00+00:00</updated><id>http://localhost:4000/update/2026/10/30/Using_AI_in_Business</id><content type="html" xml:base="http://localhost:4000/update/2026/10/30/Using_AI_in_Business.html"><![CDATA[<h1 id="ai-is-everywhere">AI is everywhere</h1>
+
+<p>It’s 2026 - AI is everywhere whether we like it or not. Let me start first with a clear message - AI is a useful tool that I am not opposed to. It can create solid deliverables which can make everyone’s life easier; however it does come at the cost of massive resource utilisation and increased prices for everyday electronics.</p>
+
+<p>It seems that the way for a business to become modern is to have an AI USP - be it a chat bot, some tool for creating codebase or AI powered decision making. In my world of analytics, every tool has an AI integration - and with tools such as Claude Cowork and ChatGPT Codex these tools are becoming available for everyone.</p>
+
+<p>Cowork and Codex are very interesting tools. I’ve used them to create entire datasets from ‘scratch’ - and in doing so it can also create any other artifacts for a given task. Want a dataset which emulates a complex insurance claim? Cowork managed to produce 6 spreadsheets containing bordereaux from multiple, fictional insurance agents, along with email chains and internal correspondence seemingly captured from a chat tool like Slack, all within 30 minutes.</p>
+
+<p>Amazing - working on complex insurance claims was one of my favourite roles, and the info produced was scarily accurate. Someone must have put some very commercially sensitive information into a LLM at some point, and it has recreated it with scary accuracy. The privacy of using these tools is not the focus of this blog, but does give lots to ponder on.</p>
+
+<h1 id="processes-and-reproducibility">Processes and reproducibility</h1>
+
+<p>Business processes are key to success. Our policies, standard operating procedures and method statements give a standardised, uniform way of working that ensures that even highly diverse teams are doing the right thing at the right time.</p>
+
+<p>My work in science has taught me the importance of reproducibility - a complete stranger being able to pick up your methodology, carry out your experiment and get similar results. Being exposed to data systems and also operational procedures, documentation and accepted methods has shown this is a truly useful transferable skill to have gained.</p>
+
+<p>In the process of learning new methods, and implementing new data architecture, I have strived through peer review to document what is being done, how to do it again, and where to look when something goes wrong.</p>
+
+<h1 id="the-ai-blackbox">The AI Blackbox</h1>
+
+<p>AI models are progressing (and releasing) at a rate which can be incredibly difficult to keep up with. I’ve included the chart below from https://aireleastracker.com/ - a site which monitors all of the major players in the space. As of September 2026, 255 models have been released.</p>
+
+<iframe src="https://aireleasetracker.com/embed/releases-by-lab?theme=light" title="Releases by Lab Over Time — AI Release Tracker" width="100%" height="460" style="border:0;border-radius:12px;max-width:640px" loading="lazy"></iframe>
+<p style="font:13px/1.5 system-ui,sans-serif;margin:8px 0 0"><a href="https://aireleasetracker.com/analytics?utm_source=embed&amp;utm_medium=referral&amp;utm_campaign=releases-by-lab" target="_blank" rel="noopener" style="color:#6b7280;text-decoration:underline">Releases by Lab Over Time — via AI Release Tracker</a></p>
+
+<p>These releases can be broken down by vendor, and I think the biggest take away from this is that <em>any AI integration is built on shifting sands</em>. Models are changing rapidly, and also with very little warning unless you’re paying attention. Importantly, we know very little about what is changing - putting change control as an unknown risk which cannot be managed.</p>
+
+<p><img src="/images/SD_AI.jpg" alt="AI agent suggesting to summarise a paper about AI.." /></p>
+
+<p>When researching how this is impacting things such as scientific research, I did see the irony above in having an AI chatbot reviewing a paper about AI consistency. Would be very interesting to see how it’s summary changes over time…</p>
+
+<h1 id="how-do-we-solve-the-black-box-issue">How do we solve the black box issue?</h1>
+
+<p>My view is to use AI as a prescript tool rather than just a one stop shop with no review. Considering a workflow where AI is assisting someone to statistically analyse a dataset - some would upload their data into a tool like Gemini Notebook, and ask it to create an output. This output - the sole deliverable - is something which gives a quick result, and we can then move onto the next task.</p>
+
+<p>However, for longivity, and also reproducibility, it would be sensible to ask for the codebase itself. Most AI tools are able to do this, and with an analyst reviewing, change controlling and owning the background work, there is scope for future development on existing good grounds.</p>
+
+<p>Sensible AI use will save headaches in the future, letting new staff pick up work and support businesses moving forward without completely changing the playing field.</p>]]></content><author><name>Scott Warren</name></author><category term="update" /><summary type="html"><![CDATA[AI is everywhere]]></summary></entry><entry><title type="html">Backup automation - A homelab approach</title><link href="http://localhost:4000/update/2026/05/10/Backup_routine.html" rel="alternate" type="text/html" title="Backup automation - A homelab approach" /><published>2026-05-10T00:00:00+01:00</published><updated>2026-05-10T00:00:00+01:00</updated><id>http://localhost:4000/update/2026/05/10/Backup_routine</id><content type="html" xml:base="http://localhost:4000/update/2026/05/10/Backup_routine.html"><![CDATA[<h1 id="you-dont-need-a-backup---until-you-need-one">You don’t need a backup - until you need one</h1>
 
 <p>Backups are one of those maintenance tasks that can be a bit annoying to set up, but really can save time in the longrun. Indeed, one of the cons of repurposing hardware is that it’s hard to know when it’s going to fail. And it will fail, just hopefully after many years of faithful service.</p>
 
@@ -22,12 +96,27 @@
 
 <h3 id="capturing-docker-compose-changes-in-gitea">Capturing Docker Compose changes in Gitea</h3>
 
-<p>In order to both source-control and backup my services on Docker Compose, I used Git. First step was finding the sources on the main mini PC, and then setting the remote repository.</p>
+<p>In order to both source-control and backup my services on Docker Compose, I used Git. First step was finding the sources on the main mini PC, and then setting the remote repository. This workflow assumes that you are comfortable with <a href="https://git-scm.com/">git</a></p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /var/lib/casaos/apps/
+<span class="c"># set directory to location where Docker Compose .yml files are stored</span>
 <span class="nb">sudo </span>git init
-<span class="nb">sudo </span>git remote add origin http://192.xxx.xx.xxx:xxxx/scott/casaos-backups.git <span class="c"># Change your IP and port to your Gitea Instance</span>
-</code></pre></div></div>]]></content><author><name>Scott Warren</name></author><category term="update" /><summary type="html"><![CDATA[You don’t need a backup - until you need one]]></summary></entry><entry><title type="html">An introduction to the homelab</title><link href="http://localhost:4000/update/2026/04/28/Homelab.html" rel="alternate" type="text/html" title="An introduction to the homelab" /><published>2026-04-28T00:00:00+01:00</published><updated>2026-04-28T00:00:00+01:00</updated><id>http://localhost:4000/update/2026/04/28/Homelab</id><content type="html" xml:base="http://localhost:4000/update/2026/04/28/Homelab.html"><![CDATA[<h1 id="why">Why?</h1>
+<span class="nb">sudo </span>git remote add origin http://192.xxx.xx.xxx:xxxx/scott/casaos-backups.git 
+<span class="c"># Change your IP and port to your Gitea Instance</span>
+</code></pre></div></div>
+<p>With the repo initiated, and remote set it’s easy now to <code class="language-plaintext highlighter-rouge">git push</code> the Docker Compose files into Gitea, and therefore save them. However, this is still a manual process.</p>
+
+<p>To automate, I created a bash script that could be scheduled:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nb">cd</span> /var/lib/casaos/apps/
+<span class="nb">sudo </span>git add <span class="nb">.</span>
+<span class="nb">sudo </span>git commit <span class="nt">-m</span> <span class="s2">"Automated backup: </span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2">"</span>
+<span class="nb">sudo </span>git push origin master
+</code></pre></div></div>
+<p>This script, saved as <code class="language-plaintext highlighter-rouge">dc_backup.sh</code>, essentially runs the code needed to stage (add .), commit (with a timestamp) and push the commits to the Gitea server. We are still missing the automation part, as a manual call would be required for this to run. Linux machines have a scheduling system known as Cron. Cron is a bit difficult to find if you don’t know where to look, but can be accessed using the <code class="language-plaintext highlighter-rouge">crontab -e</code> command in your terminal.</p>
+
+<p>Cron also uses a bit of a weird setup for defining actions.</p>]]></content><author><name>Scott Warren</name></author><category term="update" /><summary type="html"><![CDATA[You don’t need a backup - until you need one]]></summary></entry><entry><title type="html">An introduction to the homelab</title><link href="http://localhost:4000/update/2026/04/28/Homelab.html" rel="alternate" type="text/html" title="An introduction to the homelab" /><published>2026-04-28T00:00:00+01:00</published><updated>2026-04-28T00:00:00+01:00</updated><id>http://localhost:4000/update/2026/04/28/Homelab</id><content type="html" xml:base="http://localhost:4000/update/2026/04/28/Homelab.html"><![CDATA[<h1 id="why">Why?</h1>
 
 <p>Buying a new phone comes with some benefits, with my most recent phone including a year’s trial of Google Gemini Pro, and a large amount of cloud storage. I filled this space very quickly, and then because ignorance is bliss, I was suddenly faced with a nice quote for continuing the subscription. No problem, let’s just downgrade!</p>
 
