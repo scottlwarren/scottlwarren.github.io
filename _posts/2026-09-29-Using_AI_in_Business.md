@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Considerations for using AI in business processes"
-date: 2026-10-30
+date: 2026-09-29
 categories: update
 ---
 
