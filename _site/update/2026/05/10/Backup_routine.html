@@ -65,7 +65,25 @@
 <ul>
   <li>Docker compose files</li>
   <li>Gitea database dump</li>
+  <li>Essential documents</li>
 </ul>
+
+<p>I’ve chosen not to backup media for now, as this is something that requires a lot of storage and is replaceable should any drives decide to retire. The Gitea database on the other hand, is something that I would rather not lose. When I was in the initial setup of the new lab, I did actually lose it leading to lots of panicked repo creation!</p>
+
+<p>Another reason to focus on Gitea is due to the storage solution of the Raspberry Pi on which it’s hosted. MicroSD cards are wonderful things, but are less reliable long term storage solutions to normal drives, and so the risk of loss is higher.</p>
+
+<h1 id="backup-routine">Backup routine</h1>
+
+<p>In order to make things as smooth as possible, I aimed to create a backup schedule that would be automated, while also allowing for some level of version control. This means that when I inevitably break something, I can revert back to something that actually worked.</p>
+
+<h3 id="capturing-docker-compose-changes-in-gitea">Capturing Docker Compose changes in Gitea</h3>
+
+<p>In order to both source-control and backup my services on Docker Compose, I used Git. First step was finding the sources on the main mini PC, and then setting the remote repository.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /var/lib/casaos/apps/
+<span class="nb">sudo </span>git init
+<span class="nb">sudo </span>git remote add origin http://192.xxx.xx.xxx:xxxx/scott/casaos-backups.git <span class="c"># Change your IP and port to your Gitea Instance</span>
+</code></pre></div></div>
 
 
   </div><a class="u-url" href="/update/2026/05/10/Backup_routine.html" hidden></a>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-10T21:36:18+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Scott Warren</title><subtitle>Words about tech, data, and AI</subtitle><author><name>Scott Warren</name></author><entry><title type="html">Backup automation - A homelab approach</title><link href="http://localhost:4000/update/2026/05/10/Backup_routine.html" rel="alternate" type="text/html" title="Backup automation - A homelab approach" /><published>2026-05-10T00:00:00+01:00</published><updated>2026-05-10T00:00:00+01:00</updated><id>http://localhost:4000/update/2026/05/10/Backup_routine</id><content type="html" xml:base="http://localhost:4000/update/2026/05/10/Backup_routine.html"><![CDATA[<h1 id="you-dont-need-a-backup---until-you-need-one">You don’t need a backup - until you need one</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-11T15:05:05+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Scott Warren</title><subtitle>Words about tech, data, and AI</subtitle><author><name>Scott Warren</name></author><entry><title type="html">Backup automation - A homelab approach</title><link href="http://localhost:4000/update/2026/05/10/Backup_routine.html" rel="alternate" type="text/html" title="Backup automation - A homelab approach" /><published>2026-05-10T00:00:00+01:00</published><updated>2026-05-10T00:00:00+01:00</updated><id>http://localhost:4000/update/2026/05/10/Backup_routine</id><content type="html" xml:base="http://localhost:4000/update/2026/05/10/Backup_routine.html"><![CDATA[<h1 id="you-dont-need-a-backup---until-you-need-one">You don’t need a backup - until you need one</h1>
 
 <p>Backups are one of those maintenance tasks that can be a bit annoying to set up, but really can save time in the longrun. Indeed, one of the cons of repurposing hardware is that it’s hard to know when it’s going to fail. And it will fail, just hopefully after many years of faithful service.</p>
 
@@ -9,7 +9,25 @@
 <ul>
   <li>Docker compose files</li>
   <li>Gitea database dump</li>
-</ul>]]></content><author><name>Scott Warren</name></author><category term="update" /><summary type="html"><![CDATA[You don’t need a backup - until you need one]]></summary></entry><entry><title type="html">An introduction to the homelab</title><link href="http://localhost:4000/update/2026/04/28/Homelab.html" rel="alternate" type="text/html" title="An introduction to the homelab" /><published>2026-04-28T00:00:00+01:00</published><updated>2026-04-28T00:00:00+01:00</updated><id>http://localhost:4000/update/2026/04/28/Homelab</id><content type="html" xml:base="http://localhost:4000/update/2026/04/28/Homelab.html"><![CDATA[<h1 id="why">Why?</h1>
+  <li>Essential documents</li>
+</ul>
+
+<p>I’ve chosen not to backup media for now, as this is something that requires a lot of storage and is replaceable should any drives decide to retire. The Gitea database on the other hand, is something that I would rather not lose. When I was in the initial setup of the new lab, I did actually lose it leading to lots of panicked repo creation!</p>
+
+<p>Another reason to focus on Gitea is due to the storage solution of the Raspberry Pi on which it’s hosted. MicroSD cards are wonderful things, but are less reliable long term storage solutions to normal drives, and so the risk of loss is higher.</p>
+
+<h1 id="backup-routine">Backup routine</h1>
+
+<p>In order to make things as smooth as possible, I aimed to create a backup schedule that would be automated, while also allowing for some level of version control. This means that when I inevitably break something, I can revert back to something that actually worked.</p>
+
+<h3 id="capturing-docker-compose-changes-in-gitea">Capturing Docker Compose changes in Gitea</h3>
+
+<p>In order to both source-control and backup my services on Docker Compose, I used Git. First step was finding the sources on the main mini PC, and then setting the remote repository.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /var/lib/casaos/apps/
+<span class="nb">sudo </span>git init
+<span class="nb">sudo </span>git remote add origin http://192.xxx.xx.xxx:xxxx/scott/casaos-backups.git <span class="c"># Change your IP and port to your Gitea Instance</span>
+</code></pre></div></div>]]></content><author><name>Scott Warren</name></author><category term="update" /><summary type="html"><![CDATA[You don’t need a backup - until you need one]]></summary></entry><entry><title type="html">An introduction to the homelab</title><link href="http://localhost:4000/update/2026/04/28/Homelab.html" rel="alternate" type="text/html" title="An introduction to the homelab" /><published>2026-04-28T00:00:00+01:00</published><updated>2026-04-28T00:00:00+01:00</updated><id>http://localhost:4000/update/2026/04/28/Homelab</id><content type="html" xml:base="http://localhost:4000/update/2026/04/28/Homelab.html"><![CDATA[<h1 id="why">Why?</h1>
 
 <p>Buying a new phone comes with some benefits, with my most recent phone including a year’s trial of Google Gemini Pro, and a large amount of cloud storage. I filled this space very quickly, and then because ignorance is bliss, I was suddenly faced with a nice quote for continuing the subscription. No problem, let’s just downgrade!</p>
 
